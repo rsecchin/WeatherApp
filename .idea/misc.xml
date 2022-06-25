@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_back.xml" value="0.19" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_dissatisfied.xml" value="0.1625" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_info_menu_outlined.xml" value="0.2105" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_weather_menu_outilined.xml" value="0.2105" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_about.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_weather_detail.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_weathers.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/include_view_weather_error_state.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/include_view_weather_loading.xml" value="0.1" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/shimmer_layout_weather.xml" value="0.1" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/shimmer_layout_weather_detail.xml" value="0.16" />
+        <entry key="..\:/Users/rick_/AndroidStudioProjects/WeatherApp/app/src/main/res/menu/app_menu_items.xml" value="0.24635416666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

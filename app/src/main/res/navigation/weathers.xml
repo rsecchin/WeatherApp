@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/weathersFragment">
+
+    <fragment
+        android:id="@+id/weathersFragment"
+        android:name="com.example.weatherapp.presentation.weathers.WeathersFragment"
+        android:label="@string/weathers_screen_title"
+        tools:layout="@layout/fragment_weathers" >
+        <action
+            android:id="@+id/action_weathersFragment_to_weatherDetailFragment"
+            app:destination="@id/weatherDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="com.example.weatherapp.presentation.detail.WeatherDetailFragment"
+        android:label="{screenTitle}"
+        tools:layout="@layout/fragment_weather_detail" >
+        <argument
+            android:name="screenTitle"
+            app:argType="string" />
+        <argument
+            android:name="detailViewArgs"
+            app:argType="com.example.weatherapp.presentation.detail.DetailViewArg" />
+    </fragment>
+</navigation>

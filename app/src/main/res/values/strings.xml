@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <!-- Menu Bottom -->
+    <string name="app_menu_weather">Weather</string>
+    <string name="app_menu_about">About</string>
+
+    <!-- Titles -->
+    <string name="weathers_screen_title">Weathers</string>
+    <string name="about_screen_title">About</string>
+
+    <!-- Details -->
+    <string name="weather_detail_temp_title">Temperature:</string>
+    <string name="weather_detail_temp_max_title">Max:</string>
+    <string name="weather_detail_temp_min_title">Min:</string>
+
+    <!-- Error State -->
+    <string name="error_loading_weather">Error when trying to load Weather</string>
+    <string name="common_try_again">Try Again</string>
+
+</resources>
