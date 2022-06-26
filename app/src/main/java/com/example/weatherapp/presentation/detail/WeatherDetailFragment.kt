@@ -41,9 +41,9 @@ class WeatherDetailFragment : Fragment() {
                 WeatherDetailViewModel.UiState.Loading -> "Loading Weather..."
                 is WeatherDetailViewModel.UiState.Success -> {
                     binding.progressBar.visibility = View.GONE
-                    binding.textTempValue.text = "${uiState.detailWeather.main.temp}"
-                    binding.textTempMaxValue.text = "${uiState.detailWeather.main.tempMax}"
-                    binding.textTempMinValue.text = "${uiState.detailWeather.main.tempMin}"
+                    binding.textTempValue.text = "${uiState.detailWeather.main.temp}ºC"
+                    binding.textTempMaxValue.text = "${uiState.detailWeather.main.tempMax}ºC"
+                    binding.textTempMinValue.text = "${uiState.detailWeather.main.tempMin}ºC"
                 }
                 is WeatherDetailViewModel.UiState.Error -> "Error fetch Weather"
             }
