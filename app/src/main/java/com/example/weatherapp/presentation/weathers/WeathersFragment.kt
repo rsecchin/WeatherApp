@@ -73,7 +73,7 @@ class WeathersFragment : Fragment() {
         binding.viennaWeather.setOnClickListener {
             initNavigation("Vienna Weather", 48.22, 16.37)
         }
-        binding.youLocationWeather.setOnClickListener {
+        binding.yourLocationWeather.setOnClickListener {
             getCurrentLocation()
         }
     }

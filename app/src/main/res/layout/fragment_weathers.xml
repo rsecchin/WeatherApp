@@ -11,7 +11,7 @@
         android:id="@+id/weathers_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a City:"
+        android:text="@string/fragment_weather_title"
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginTop="15dp"
@@ -19,103 +19,119 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
-        android:id="@+id/london_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/weathers_title"
-        android:text="London"/>
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <Button
-        android:id="@+id/madrid_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/london_weather"
-        app:layout_constraintTop_toBottomOf="@id/weathers_title"
-        android:text="Madrid"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/weathers_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/paris_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/madrid_weather"
-        app:layout_constraintTop_toBottomOf="@id/weathers_title"
-        android:text="Paris"/>
+            <Button
+                android:id="@+id/your_location_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/fragment_weather_your_location_title"/>
 
-    <Button
-        android:id="@+id/berlin_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/london_weather"
-        android:text="Berlin"/>
+            <Button
+                android:id="@+id/london_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/your_location_weather"
+                android:text="@string/fragment_weather_london_button"/>
 
-    <Button
-        android:id="@+id/copenhagen_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/berlin_weather"
-        app:layout_constraintTop_toBottomOf="@id/london_weather"
-        android:text="Copenhagen"/>
+            <Button
+                android:id="@+id/madrid_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/london_weather"
+                android:text="@string/fragment_weather_madrid_button"/>
 
-    <Button
-        android:id="@+id/rome_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/copenhagen_weather"
-        app:layout_constraintTop_toBottomOf="@id/london_weather"
-        android:text="Rome"/>
+            <Button
+                android:id="@+id/paris_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/madrid_weather"
+                android:text="@string/fragment_weather_paris_button"/>
 
-    <Button
-        android:id="@+id/lisbon_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/berlin_weather"
-        android:text="Lisbon"/>
+            <Button
+                android:id="@+id/berlin_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paris_weather"
+                android:text="@string/fragment_weather_berlin_button"/>
 
-    <Button
-        android:id="@+id/dublin_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/lisbon_weather"
-        app:layout_constraintTop_toBottomOf="@id/berlin_weather"
-        android:text="Dublin"/>
+            <Button
+                android:id="@+id/copenhagen_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/berlin_weather"
+                android:text="@string/fragment_weather_copenhagen_button"/>
 
-    <Button
-        android:id="@+id/prague_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/dublin_weather"
-        app:layout_constraintTop_toBottomOf="@id/berlin_weather"
-        android:text="Prague"/>
+            <Button
+                android:id="@+id/rome_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/copenhagen_weather"
+                android:text="@string/fragment_weather_rome_button"/>
 
-    <Button
-        android:id="@+id/vienna_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lisbon_weather"
-        android:text="Vienna"/>
+            <Button
+                android:id="@+id/lisbon_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rome_weather"
+                android:text="@string/fragment_weather_lisbon_button"/>
 
-    <Button
-        android:id="@+id/you_location_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:layout_constraintStart_toEndOf="@id/vienna_weather"
-        app:layout_constraintTop_toBottomOf="@id/lisbon_weather"
-        android:text="Your Location"/>
+            <Button
+                android:id="@+id/dublin_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lisbon_weather"
+                android:text="@string/fragment_weather_dublin_button"/>
+
+            <Button
+                android:id="@+id/prague_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dublin_weather"
+                android:text="@string/fragment_weather_prague_button"/>
+
+            <Button
+                android:id="@+id/vienna_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prague_weather"
+                android:text="@string/fragment_weather_vienna_button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
