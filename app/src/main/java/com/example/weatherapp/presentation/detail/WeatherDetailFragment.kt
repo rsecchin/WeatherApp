@@ -45,7 +45,11 @@ class WeatherDetailFragment : Fragment() {
                     binding.textTempMaxValue.text = "${uiState.detailWeather.main.tempMax}ºC"
                     binding.textTempMinValue.text = "${uiState.detailWeather.main.tempMin}ºC"
                 }
-                is WeatherDetailViewModel.UiState.Error -> "Error fetch Weather"
+                is WeatherDetailViewModel.UiState.Error -> {
+                    binding.progressBar.visibility = View.GONE
+                    binding.weatherDetailBody.visibility = View.GONE
+                    binding.errorState.root.visibility = View.VISIBLE
+                }
             }
         }
 
