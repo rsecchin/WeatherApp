@@ -35,6 +35,7 @@ class WeatherDetailFragment : Fragment() {
     }
 
     private fun initObservers(detailViewArgs: DetailViewArg) {
+
         viewModel.uiState.observe(viewLifecycleOwner) { uiState ->
             when (uiState) {
                 WeatherDetailViewModel.UiState.Loading -> "Loading Weather..."

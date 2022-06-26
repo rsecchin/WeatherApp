@@ -17,5 +17,6 @@
     <!-- Error State -->
     <string name="error_loading_weather">Error when trying to load Weather</string>
     <string name="common_try_again">Try Again</string>
+    <string name="about_description">Android Weather App\n\n Using kotlin for the code, MVVM architecture, navigation components(using args for sending params when get to next page), using https://openweathermap.org api, unit tests with Mockito, Flow and LiveData.</string>
 
 </resources>
